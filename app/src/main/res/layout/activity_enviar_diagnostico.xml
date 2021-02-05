@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6879DA8"
+    android:orientation="vertical"
+    tools:context=".Activity.EnviarDiagnosticoActivity">
+
+    <TextView
+        android:id="@+id/Diagnostico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9FD2D8"
+        android:text="Introducir el código de diagnóstico proporcionado por el
+Ministerio de Salud Pública o entidad particular "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Código de diagnóstico"
+         />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introducir la fecha en la que iniciaron los síntomas, en caso de no haber tenido síntomas,
+        ingresar la fecha en la que se tomaron las muestras para el diagnostico"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="289dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:text="Toda la información nos permite informar a los demas usuarios que han tendido contacto contigo."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RegresarDiagnostico"
+        android:text="Regresar" />
+</LinearLayout>
